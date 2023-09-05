@@ -1,7 +1,7 @@
 {
   "env": {
     "browser": true,
-    "node": true, //Node.jsのグローバル変数のwindow, document, processがESlintに認識されるようになる。
+    "node": true,
     "es6": true
   },
   "parserOptions": {
@@ -9,15 +9,15 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-console": ["warn"],
+    "no-console": ["error"],
     "indent": ["error", 2],
-    // "quotes": ["error", "single"],
+    "quotes": ["error", "single"],
     "semi": ["error", "always"],
     "no-unused-vars": ["warn"],
     "eqeqeq": ["error", "always"],
     "camelcase": ["warn"],
     "prefer-template": "off"
   },
-  //Prettierと競合するESLintのルールを自動で無効にしてくれます。。
+
   "extends": ["airbnb-base", "prettier"]
 }
