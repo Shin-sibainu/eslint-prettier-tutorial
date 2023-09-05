@@ -1,11 +1,15 @@
 {
   "env": {
+    //ブラウザ環境やNode.js、ES6で使用されるグローバル変数
+    //window, document, process等が利用可能になる。
     "browser": true,
     "node": true,
     "es6": true
   },
   "parserOptions": {
+    //ECMAScriptの最新バージョンを使用
     "ecmaVersion": "latest",
+    //import/export文を許可
     "sourceType": "module"
   },
   "rules": {
