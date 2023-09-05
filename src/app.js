@@ -12,7 +12,7 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  res.write('This is a another endpoint');
+  res.write('This is a another endpoint')
   res.end();
 });
 server.listen(3000);
